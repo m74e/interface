@@ -3,13 +3,13 @@ import "./right.css";
 import first from "/public/arrow.svg";
 import second from "/public/whitearrow.svg";
 export default function Right() {
-    const arrow=[first,second]
-const[grey,setGrey]=useState(arrow[0]);
-const[show,setShow]=useState(false);
-  
-    const choose = () => {
-        setShow(true);
-        setGrey(arrow[1]);
+  const arrow = [first, second];
+  const [grey, setGrey] = useState(arrow[0]);
+  const [show, setShow] = useState(false);
+
+  const choose = () => {
+    setShow(true);
+    setGrey(arrow[1]);
   };
   return (
     <>
@@ -54,11 +54,9 @@ const[show,setShow]=useState(false);
             </div>
           </button>
         </div>
-        <button className={`next ${show ? "block": "none"}`}>
-        <p>Next</p>
-            <img src={grey} alt="" />
-          
- 
+        <button className={`next ${show ? "block" : "none"}`}>
+          <p>Next</p>
+          <img src={grey} alt="" />
         </button>
       </div>
     </>
