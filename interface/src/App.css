@@ -5,4 +5,5 @@
   display: flex;
   gap: 32px;
   padding: 16px;
+  justify-content: center;
 }
